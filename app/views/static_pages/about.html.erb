@@ -1,8 +1,39 @@
-<% provide(:title, 'About Us') %>
-<h1>About Us</h1>
-<p>
-  The <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-  is a project to make a book and screencasts to teach web development
-  with <a href="http://rubyonrails.org/">Ruby on Rails</a>. This
-  is the sample application for the tutorial.
-</p>
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<!-- 最新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  	<% provide(:title, 'About Us') %>
+	<div class="container">
+	<h1>About Us</h1>
+	<p>
+	  The <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+	  is a project to make a book and screencasts to teach web development
+	  with <a href="http://rubyonrails.org/">Ruby on Rails</a>. This
+	  is the sample application for the tutorial.
+	</p>
+	</div>
+    <div class="input-append date form_datetime">
+    <input size="16" type="text" value="" readonly>
+    <span class="add-on"><i class="icon-th"></i></span>
+</div>
+ 
+<script type="text/javascript">
+    $(".form_datetime").datetimepicker({
+        format: "dd MM yyyy - hh:ii"
+    });
+</script>  
+  </body>
+<html>
